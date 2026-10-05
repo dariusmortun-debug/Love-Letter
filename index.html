@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pentru Sonia ❤️</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="hearts"></div>
+
+<main class="app">
+<section id="lockScreen" class="screen active">
+  <img class="hero-photo" src="images/photo1.jpeg" alt="Noi doi ❤️">
+  <p class="eyebrow">Un mic lucru pentru tine</p>
+  <h1>Introdu codul secret ❤️</h1>
+  <div id="codeDisplay" class="code-display">••••••</div>
+  <div class="keypad">
+    <button data-key="1">1</button><button data-key="2">2</button><button data-key="3">3</button>
+    <button data-key="4">4</button><button data-key="5">5</button><button data-key="6">6</button>
+    <button data-key="7">7</button><button data-key="8">8</button><button data-key="9">9</button>
+    <button data-action="clear">C</button><button data-key="0">0</button><button data-action="back">⌫</button>
+  </div>
+  <button id="unlockBtn" class="primary">Deschide ❤️</button>
+  <p id="error" class="error"></p>
+</section>
+
+<section id="homeScreen" class="screen">
+  <p class="eyebrow">Pentru iubirea mea</p>
+  <h1>Bine ai venit în locul nostru ❤️</h1>
+  <p class="subtitle">Am pregătit trei lucruri pentru tine.</p>
+  <div class="boxes">
+    <button class="love-box" data-go="photoScreen"><span>📸</span><strong>Box 1</strong><small>O amintire pentru tine</small></button>
+    <button class="love-box" data-go="musicScreen"><span>🎵</span><strong>Box 2</strong><small>Un cântec pentru tine</small></button>
+    <button class="love-box" data-go="letterChoiceScreen"><span>💌</span><strong>Box 3</strong><small>O scrisoare de la mine</small></button>
+  </div>
+</section>
+
+<section id="photoScreen" class="screen content-screen">
+  <p class="eyebrow">Box 1</p>
+  <h1>O amintire pentru tine 📸</h1>
+  <img class="memory-photo" src="images/photo2.jpeg" alt="O amintire cu noi">
+  <p class="message">Unele momente devin amintiri pe care nu vreau să le uit niciodată. ❤️</p>
+  <button class="secondary back">← Înapoi</button>
+</section>
+
+<section id="musicScreen" class="screen content-screen">
+  <p class="eyebrow">Box 2</p>
+  <h1>Cântecul nostru 🎵</h1>
+  <div class="music-card">
+    <img class="music-photo" src="images/photo1.jpeg" alt="Noi doi">
+    <h2>Luis Gabriel - Orice Pana La Ea</h2>
+    <p>Apasă play și ascultă cântecul meu pentru tine.</p>
+    <iframe src="https://www.youtube.com/embed/iYxJOBYaYGg"
+      title="Luis Gabriel - Orice Pana La Ea"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen></iframe>
+  </div>
+  <button class="secondary back">← Înapoi</button>
+</section>
+
+<section id="letterChoiceScreen" class="screen content-screen">
+  <p class="eyebrow">Box 3</p>
+  <h1>Alege cum vrei să citești scrisoarea 💌</h1>
+  <div class="letter-options">
+    <button class="style-choice" data-style="old">📜 Old Style<small>Hârtie vintage</small></button>
+    <button class="style-choice" data-style="heart">❤️ Heart Style<small>Romantic și dulce</small></button>
+    <button class="style-choice" data-style="normal">📄 Normal Blank<small>Coală A4 curată</small></button>
+  </div>
+  <button class="secondary back">← Înapoi</button>
+</section>
+
+<section id="letterScreen" class="screen content-screen">
+<article id="letter" class="letter heart">
+<div class="heart-decoration">♥</div>
+<p class="date">09.02.26</p>
+<h1>Iubirea mea,</h1>
+<p>Azi împlinim 1 an de relație, și vreau să știi cât de mult însemni tu pentru mine.</p>
+<p>Vreau să încep cu o poveste care nu am s-o uit niciodată și m-a ajutat mult. Știi deja trecutul meu, și prin ce am trecut și poate încă trec prin câteva din ele, dar alături de tine am învățat să ignor tot răul din suflet și să-l transform în iubire.</p>
+<p>M-ai ajutat foarte mult din prima secundă de când te-am cunoscut cu adevărat. Nu înțelegi cât însemni tu pentru mine și nu știu ce m-aș face și ce aș ajunge fără tine în viața mea.</p>
+<p>Ești totul pentru mine și vreau să știi cât de mult te iubesc cu adevărat. M-ai învățat să nu bag lumea rea în seamă și cum să nu mă consum pe oameni care caută doar atenție și nu-mi vor binele cu adevărat, așa cum îmi vrei tu.</p>
+<p>M-ai ajutat mult să mă repar și să trec peste tot. Și cum să nu iubesc pe cineva care mă face să luminez? Când sunt alături de tine simt că luminăm și nu mă mai interesează nimic din ce se întâmplă în jur.</p>
+<p>Pentru asta te iubesc foarte mult și abia aștept să fim amândoi mami și tati într-o zi! Pentru că alături de tine vreau să îmi petrec tot restul vieții.</p>
+<p class="signature">Te iubesc enorm de mult, puiu meu ❤️❤️❤️</p>
+<p class="from">Forever yours,<br><strong>Darius ❤️</strong></p>
+</article>
+<button class="secondary back">← Înapoi</button>
+</section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
